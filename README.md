@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:quicklogin:1.5.7'
+implementation 'io.github.yidun:onePass:1.5.7'
 ```
 
 ## 各种配置
@@ -227,7 +227,7 @@ quickLogin.isPreLoginResultValid()
 |----|----|
 | boolean | true：已过期，需要重新预取号 false：未过期 |
 
-### 4. 判断运营商类型(非必须)
+### 5. 判断运营商类型(非必须)
 
 #### 代码说明
 
@@ -247,7 +247,7 @@ quickLogin.checkNetWork(Context context)
 |----|----|
 | int | 1：电信 2：移动 3：联通 4:wifi 5：未知 |
 
-### 5. 设置预取号超时时间(非必须)
+### 6. 设置预取号超时时间(非必须)
 
 #### 代码说明
 
@@ -261,7 +261,7 @@ quickLogin.setPrefetchNumberTimeout(int timeout)
 |----|----|--------|------|----|
 |timeout|int|是|8| 单位秒 |
 
-### 6. 设置本机校验超时时间(非必须，仅联通有效)
+### 7. 设置本机校验超时时间(非必须，仅联通有效)
 
 #### 代码说明
 
@@ -275,7 +275,7 @@ quickLogin.setFetchNumberTimeout(int timeout)
 |----|----|--------|------|----|
 |timeout|int|是|5| 单位秒 |
 
-### 7. 返回 SDK 版本号(非必须)
+### 8. 返回 SDK 版本号(非必须)
 
 #### 代码说明
 
@@ -289,7 +289,7 @@ quickLogin.getSDKVersion()
 |----|----|
 | String | 版本号 |
 
-### 8. 设置是否打开日志(非必须)
+### 9. 设置是否打开日志(非必须)
 
 #### 代码说明
 
@@ -303,7 +303,7 @@ quickLogin.setDebugMode(boolean debug)
 |----|----|--------|------|----|
 |debug|boolean|是|false| 是否打印日志 |
 
-### 9. 本机校验
+### 10. 本机校验
 
 在初始化之后执行，本机校验和一键登录可共用初始化，本机校验界面需自行实现
 
