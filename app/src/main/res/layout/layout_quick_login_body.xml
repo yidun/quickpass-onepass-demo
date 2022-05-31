@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yd_quick_login_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/oauth_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/app_name" />
+
+
+    <EditText
+        android:id="@+id/oauth_mobile_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:autofillHints="脱敏手机号"
+        android:background="@null"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:hint="脱敏手机号"
+        android:inputType="number"
+        android:text="152****7777"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:text="中国电信提供认证服务"
+        android:textColor="#9A9A9A"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/oauth_login"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/oauth_mobile_et"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_demo_auth_bt"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="本机号码一键登录"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

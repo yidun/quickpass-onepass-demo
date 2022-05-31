@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="nis.netease.com.quickpassdemo">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.SelectorActivity"
+            android:exported="true"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name=".ui.OnePassActivity"
+            android:exported="true"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name=".ui.BenjiActivity"
+            android:exported="true"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name=".ui.ResultActivity"
+            android:exported="true"
+            android:screenOrientation="behind" />
+    </application>
+
+</manifest>

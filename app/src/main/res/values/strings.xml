@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">号码认证</string>
+    <string name="tv_skip">跳过</string>
+    <string name="tv_splash_1">全新的号码认证</string>
+    <string name="tv_splash_2">解决方案</string>P
+    <string name="tv_result">获取结果</string>
+    <string name="btn_retry">再次体验</string>
+    <string name="onePass">号码认证</string>
+    <string name="benji">本机校验</string>
+</resources>
