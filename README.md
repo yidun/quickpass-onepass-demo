@@ -204,11 +204,6 @@ public interface QuickLoginTokenListener {
      * @param msg     出错提示信息
      */
     void onGetTokenError(String YDToken, String msg);
-
-     /**
-     * 取消一键登录
-     */
-    void onCancelGetToken();
 }
 ```
 
