@@ -34,10 +34,7 @@ android {
     }
     signingConfigs {
         debug {
-            keyAlias 'yidun'
-            keyPassword 'yidun__'
-            storeFile file('../signkey/yidun.jks')
-            storePassword 'yidun__'
+           // 签名
         }
     }
     compileOptions {
