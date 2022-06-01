@@ -1,6 +1,7 @@
 package nis.netease.com.quickpassdemo.ui
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import com.netease.nis.quicklogin.QuickLogin
 import com.netease.nis.quicklogin.listener.QuickLoginPreMobileListener
@@ -31,7 +32,7 @@ class SelectorActivity : BaseActivity() {
         demo_seletor?.setOnClickListener {
             quickLogin?.let {
                 // 是否过期
-                if (!it.isPreLoginResultValid) {
+                if (!it.isPreLoginResultValid && !TextUtils.isEmpty((application as MyApplication).mobileNumber)) {
                     openActivity<OnePassActivity>(this) {}
                 } else {
                     if (quickLogin?.checkNetWork(this) != 4 && quickLogin?.checkNetWork(this) != 5) {
