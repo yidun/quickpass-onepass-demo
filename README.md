@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:onePass:1.5.7'
+implementation 'io.github.yidun:onePass:1.5.8'
 ```
 
 ## 各种配置
@@ -207,7 +207,7 @@ public interface QuickLoginTokenListener {
 }
 ```
 
-### 4. 预取号是否过期(非必须)
+### 4. 预取号token是否有效(非必须)
 预取号未过期可直接调用取号
 
 #### 代码说明
@@ -220,7 +220,7 @@ quickLogin.isPreLoginResultValid()
 
 |类型|描述|
 |----|----|
-| boolean | true：已过期，需要重新预取号 false：未过期 |
+| boolean | true：优先 false：已过期，需要重新预取号 |
 
 ### 5. 判断运营商类型(非必须)
 
