@@ -43,8 +43,8 @@ class OnePassActivity : BaseActivity() {
         oauth_login?.setOnClickListener {
             if (quick_login_privacy_checkbox.isChecked) {
                 application?.quickLogin?.let {
-                    // 是否过期
-                    if (!it.isPreLoginResultValid) {
+                    // 是否有效
+                    if (it.isPreLoginResultValid) {
                         it.onePass(object : QuickLoginTokenListener() {
                             override fun onGetTokenSuccess(token: String?, accessCode: String?) {
                                 finish()
