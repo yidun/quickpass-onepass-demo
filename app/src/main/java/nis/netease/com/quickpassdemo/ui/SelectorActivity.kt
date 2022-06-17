@@ -31,8 +31,8 @@ class SelectorActivity : BaseActivity() {
     private fun initListeners() {
         demo_seletor?.setOnClickListener {
             quickLogin?.let {
-                // 是否过期
-                if (!it.isPreLoginResultValid && !TextUtils.isEmpty((application as MyApplication).mobileNumber)) {
+                // 是否有效
+                if (it.isPreLoginResultValid && !TextUtils.isEmpty((application as MyApplication).mobileNumber)) {
                     openActivity<OnePassActivity>(this) {}
                 } else {
                     if (quickLogin?.checkNetWork(this) != 4 && quickLogin?.checkNetWork(this) != 5) {
