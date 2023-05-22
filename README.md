@@ -220,7 +220,7 @@ quickLogin.isPreLoginResultValid()
 
 |类型|描述|
 |----|----|
-| boolean | true：优先 false：已过期，需要重新预取号 |
+| boolean | true：有效 false：已过期，需要重新预取号 |
 
 ### 5. 判断运营商类型(非必须)
 
