@@ -117,7 +117,8 @@ demo使用注意事项：
 #### 代码说明
 
 ```
-QuickLogin quickLogin = QuickLogin.getInstance(Context context, String businessId);
+QuickLogin quickLogin = QuickLogin.getInstance();
+quickLogin.init(Context context, String businessId);
 ```
 
 #### 参数说明
