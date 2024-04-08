@@ -81,8 +81,10 @@ SDK内部权限说明
 ```
 -dontwarn com.cmic.sso.sdk.**
 -keep class com.cmic.sso.**{*;}
--dontwarn com.sdk.**
--keep class com.sdk.** { *;}
+-dontwarn com.unicom.online.account.shield.**
+-keep class com.unicom.online.account.shield.** {*;}
+-dontwarn com.unicom.online.account.kernel.**
+-keep class com.unicom.online.account.kernel.** {*;}
 -keep class cn.com.chinatelecom.account.**{*;}
 -keep public class * extends android.view.View
 -keep class com.netease.nis.quicklogin.entity.**{*;}
