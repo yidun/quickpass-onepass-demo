@@ -207,7 +207,7 @@ public interface QuickLoginTokenListener {
      * @param code    错误码
      * @param msg     出错提示信息
      */
-    void onGetTokenError(String ydToken,int code, String msg);
+    void onGetTokenError(String ydToken, int code, String msg);
 }
 ```
 
@@ -333,9 +333,10 @@ public interface QuickLoginTokenListener {
     /**
      * 获取运营商token失败
      * @param ydToken 易盾token
+     * @param code    错误码
      * @param msg     出错提示信息
      */
-    void onGetTokenError(String ydToken, String msg);
+    void onGetTokenError(String ydToken, int code, String msg);
 }
 ```
 
