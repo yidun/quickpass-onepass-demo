@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:onePass:1.6.5.1'
+implementation 'io.github.yidun:onePass:1.6.6'
 ```
 
 ## 各种配置
@@ -158,17 +158,17 @@ quickLogin.prefetchMobileNumber(QuickLoginPreMobileListener listener)
 public interface QuickLoginPreMobileListener {
     /**
      * 预期号成功
-     * @param YDToken      易盾Token
+     * @param ydToken      易盾Token
      * @param mobileNumber 获取的手机号码掩码
      */
-    void onGetMobileNumberSuccess(String YDToken, String mobileNumber);
+    void onGetMobileNumberSuccess(String ydToken, String mobileNumber);
 
     /**
      * 预取号失败
-     * @param YDToken 易盾Token
+     * @param ydToken 易盾Token
      * @param msg     获取手机号掩码失败原因
      */
-    void onGetMobileNumberError(String YDToken, String msg);
+    void onGetMobileNumberError(String ydToken, String msg);
 }
 ```
 
@@ -196,17 +196,18 @@ quickLogin.onePass(QuickLoginTokenListener listener)
 public interface QuickLoginTokenListener {
     /**
      * 获取运营商token成功
-     * @param YDToken    易盾token
+     * @param ydToken    易盾token
      * @param accessCode 运营商accessCode
      */
-    void onGetTokenSuccess(String YDToken, String accessCode);
+    void onGetTokenSuccess(String ydToken, String accessCode);
 
     /**
      * 获取运营商token失败
-     * @param YDToken 易盾token
+     * @param ydToken 易盾token
+     * @param code    错误码
      * @param msg     出错提示信息
      */
-    void onGetTokenError(String YDToken, String msg);
+    void onGetTokenError(String ydToken,int code, String msg);
 }
 ```
 
@@ -324,17 +325,17 @@ getToken(String mobileNumber，QuickLoginTokenListener listener)
 public interface QuickLoginTokenListener {
     /**
      * 获取运营商token成功
-     * @param YDToken    易盾token
+     * @param ydToken    易盾token
      * @param accessCode 运营商accessCode
      */
-    void onGetTokenSuccess(String YDToken, String accessCode);
+    void onGetTokenSuccess(String ydToken, String accessCode);
 
     /**
      * 获取运营商token失败
-     * @param YDToken 易盾token
+     * @param ydToken 易盾token
      * @param msg     出错提示信息
      */
-    void onGetTokenError(String YDToken, String msg);
+    void onGetTokenError(String ydToken, String msg);
 }
 ```
 
