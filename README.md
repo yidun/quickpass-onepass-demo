@@ -168,7 +168,7 @@ public interface QuickLoginPreMobileListener {
      * @param ydToken 易盾Token
      * @param msg     获取手机号掩码失败原因
      */
-    void onGetMobileNumberError(String ydToken, String msg);
+    void onGetMobileNumberError(String ydToken,int code,String msg);
 }
 ```
 
