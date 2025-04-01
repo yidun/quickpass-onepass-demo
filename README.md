@@ -279,7 +279,7 @@ quickLogin.setFetchNumberTimeout(int timeout)
 #### 代码说明
 
 ```
-quickLogin.getSDKVersion()
+quickLogin.getSdkVersion()
 ```
 
 #### 返回值说明
