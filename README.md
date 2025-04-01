@@ -309,14 +309,13 @@ quickLogin.setDebugMode(boolean debug)
 #### 代码说明
 
 ```
-getToken(String mobileNumber，QuickLoginTokenListener listener)
+getToken(QuickLoginTokenListener listener)
 ```
 
 #### 参数说明
 
 |参数|类型|是否必填|默认值|描述|
 |----|----|--------|------|----|
-|mobileNumber|String|是|无| 待校验手机号 |
 |listener|QuickLoginTokenListener|是|无| 本机校验监听器 |
 
 #### QuickLoginTokenListener 接口说明
