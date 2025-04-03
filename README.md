@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:onePass:1.6.7'
+implementation 'io.github.yidun:onePass:1.6.8'
 ```
 
 ## 各种配置
@@ -251,7 +251,7 @@ quickLogin.checkNetWork(Context context)
 #### 代码说明
 
 ```
-quickLogin.setPrefetchNumberTimeout(int timeout)
+quickLogin.setPrefetchNumberTotalTimeout(int timeout)
 ```
 
 #### 参数说明
