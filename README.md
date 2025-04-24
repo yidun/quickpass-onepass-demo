@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:onePass:1.6.8'
+implementation 'io.github.yidun:onePass:1.6.9'
 ```
 
 ## 各种配置
@@ -302,7 +302,32 @@ quickLogin.setDebugMode(boolean debug)
 |----|----|--------|------|----|
 |debug|boolean|是|false| 是否打印日志 |
 
-### 10. 本机校验
+### 10. 获取运营商名称(非必须，需要在预取号成功后调用)
+
+#### 代码说明
+
+```
+quickLogin.getSlogan()
+```
+
+### 11. 获取运营商隐私协议标题(非必须，需要在预取号成功后调用)
+
+#### 代码说明
+
+```
+quickLogin.getProtocol()
+```
+
+### 12. 获取运营商隐私协议地址(非必须，需要在预取号成功后调用)
+
+#### 代码说明
+
+```
+quickLogin.getProtocolUrl()
+```
+
+
+### 13. 本机校验
 
 在初始化之后执行，本机校验和一键登录可共用初始化，本机校验界面需自行实现
 
