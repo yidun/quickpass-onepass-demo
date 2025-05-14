@@ -42,7 +42,7 @@ allprojects {
 在对应 module 的 build.gradle 中添加依赖
 
 ```
-implementation 'io.github.yidun:onePass:1.6.9'
+implementation 'io.github.yidun:onePass:1.7.0'
 ```
 
 ## 各种配置
